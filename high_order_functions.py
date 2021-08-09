@@ -18,7 +18,8 @@ print(squares)
 
 
 # Reduce
+from functools import reduce
 my_list = [2,2,2,2,2]
 
-
-
+multiply = reduce(lambda a,b: a*b, my_list)
+print(multiply)
